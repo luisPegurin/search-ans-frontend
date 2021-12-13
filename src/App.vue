@@ -1,17 +1,16 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app"> 
+    <Searcher/>
   </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script> 
+import Searcher from './components/Searcher.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Searcher
   }
 }
 </script>
@@ -22,7 +21,18 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #2c3e50; 
+  height: 100%;
 }
+html ,body{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+
+}
+
+h1 {
+  margin: 0;
+}
+
 </style>
